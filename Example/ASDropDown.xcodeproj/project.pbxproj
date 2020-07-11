@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1308A5389790C0760F2B7682 /* ASDropDown.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ASDropDown.podspec; path = ../ASDropDown.podspec; sourceTree = "<group>"; };
+		1308A5389790C0760F2B7682 /* ASDropDown.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASDropDown.podspec; path = ../ASDropDown.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3CA8966AC8B9780EEDE3A94B /* Pods_ASDropDown_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASDropDown_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4937A02691F6BB91AB6F0E48 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4937A02691F6BB91AB6F0E48 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ASDropDown_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDropDown_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		708B6ABCE560071E8538AB0A /* Pods_ASDropDown_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASDropDown_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D53D3B9B17BF2D7BD5D78D2 /* Pods-ASDropDown_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDropDown_Example.debug.xcconfig"; path = "Target Support Files/Pods-ASDropDown_Example/Pods-ASDropDown_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		95C3EB65A113FDCF7FB59592 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		95C3EB65A113FDCF7FB59592 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		963ECF6268E1B328C5EEA6C9 /* Pods-ASDropDown_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDropDown_Example.release.xcconfig"; path = "Target Support Files/Pods-ASDropDown_Example/Pods-ASDropDown_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BCCE4A72C8AC5CD2210C865E /* Pods-ASDropDown_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDropDown_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ASDropDown_Tests/Pods-ASDropDown_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D21792CBA17137D0438899F1 /* Pods-ASDropDown_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDropDown_Tests.release.xcconfig"; path = "Target Support Files/Pods-ASDropDown_Tests/Pods-ASDropDown_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				BCCE4A72C8AC5CD2210C865E /* Pods-ASDropDown_Tests.debug.xcconfig */,
 				D21792CBA17137D0438899F1 /* Pods-ASDropDown_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

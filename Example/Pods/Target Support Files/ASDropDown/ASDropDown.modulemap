@@ -1,0 +1,6 @@
+framework module ASDropDown {
+  umbrella header "ASDropDown-umbrella.h"
+
+  export *
+  module * { export * }
+}

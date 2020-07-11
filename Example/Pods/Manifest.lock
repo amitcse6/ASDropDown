@@ -1,0 +1,27 @@
+PODS:
+  - ASDropDown (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - ASDropDown (from `../`)
+  - FBSnapshotTestCase (~> 2.1.4)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ASDropDown:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASDropDown: feecfc8ad9f79f303ddf8e5d794d1134fcb47867
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 587a96da7f8162f503caee1a3f444faad3d7abf6
+
+COCOAPODS: 1.9.1
