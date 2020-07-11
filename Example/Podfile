@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ASDropDown_Example' do
+  pod 'ASDropDown', :path => '../'
+
+  target 'ASDropDown_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
