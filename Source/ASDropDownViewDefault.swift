@@ -45,7 +45,7 @@ public class ASDropDownViewDefault: ASDropDownView {
         container?.addSubview(boxView.unsafelyUnwrapped)
         boxView?.layer.rasterizationScale = UIScreen.main.scale
         boxView?.layer.shouldRasterize = true
-        boxView?.asdShadowDefault(UIColor(asdRed: "#ffffff", alpha: 1.0), UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0), UIColor(asdRed: "#AAAAAA", alpha: 1.0), 5, scale: true) 
+        boxView?.asdShadowDefault(UIColor(asdValue: "#ffffff", alpha: 1.0), UIColor(red: 200.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0), UIColor(asdValue: "#AAAAAA", alpha: 1.0), 5, scale: true)
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(onTap))
         gesture.numberOfTapsRequired = 1

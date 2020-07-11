@@ -39,7 +39,9 @@ public class ASDropDown: NSObject {
                 dropDownView?.setEvent(selectionAction)
                 dropDownView?.translatesAutoresizingMaskIntoConstraints = false
                 
+                
                 dropDownView?.topAnchor.constraint(equalTo: viewController.view.safeAreaLayoutGuide.topAnchor).isActive = true
+                
                 
                 dropDownView?.leftAnchor.constraint(equalTo: viewController.view.safeAreaLayoutGuide.leftAnchor).isActive = true
                 dropDownView?.rightAnchor.constraint(equalTo: viewController.view.safeAreaLayoutGuide.rightAnchor).isActive = true
