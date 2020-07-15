@@ -11,6 +11,7 @@
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
+		2834CAB724BF3F0500C4A742 /* ASDropDownProp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834CAB624BF3F0500C4A742 /* ASDropDownProp.swift */; };
 		28D69E8624B9F8D1000817AB /* ASDropDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D69E7F24B9F8D1000817AB /* ASDropDownItem.swift */; };
 		28D69E8724B9F8D1000817AB /* ASDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D69E8024B9F8D1000817AB /* ASDropDown.swift */; };
 		28D69E8824B9F8D1000817AB /* ASDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D69E8124B9F8D1000817AB /* ASDropDownView.swift */; };
@@ -82,6 +83,7 @@
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		27A8FD4D4D2A2FA35EEFB30B543A3D23 /* ASDropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASDropDown-dummy.m"; sourceTree = "<group>"; };
+		2834CAB624BF3F0500C4A742 /* ASDropDownProp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASDropDownProp.swift; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		28D69E7F24B9F8D1000817AB /* ASDropDownItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASDropDownItem.swift; sourceTree = "<group>"; };
 		28D69E8024B9F8D1000817AB /* ASDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASDropDown.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				28D69E8324B9F8D1000817AB /* ASDropDownCell.swift */,
 				28D69E8424B9F8D1000817AB /* ASDropDownBox.swift */,
 				28D69E8524B9F8D1000817AB /* ASDropDownViewDefault.swift */,
+				2834CAB624BF3F0500C4A742 /* ASDropDownProp.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 			files = (
 				28D69E8A24B9F8D1000817AB /* ASDropDownCell.swift in Sources */,
 				66B2310671135D0B8DC7A1A1DCF31D00 /* ASDropDown-dummy.m in Sources */,
+				2834CAB724BF3F0500C4A742 /* ASDropDownProp.swift in Sources */,
 				28D69E8724B9F8D1000817AB /* ASDropDown.swift in Sources */,
 				28D69E8924B9F8D1000817AB /* ASDropDownView+Extension.swift in Sources */,
 				28D69E8B24B9F8D1000817AB /* ASDropDownBox.swift in Sources */,

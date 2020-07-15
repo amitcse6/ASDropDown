@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func dropdownEvent(_ sender: Any) {
         let items = (0..<100).map({return ASDropDownItem(key: "key_\($0)", title: "item-\($0)")})
-        ASDropDown.openDropDown(items, { [unowned self] (index: Int, item: String) in
+        ASDropDown.openDropDown(items, ASDropDownProp(UIFont.systemFont(ofSize: 15), UIColor.red), { [unowned self] (index: Int, item: String) in
             self.textField.text = item
             }, button, nil)
     }
