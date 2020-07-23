@@ -20,10 +20,11 @@ public class ASDropDownViewDefault: ASDropDownView {
         setup()
     }
     
-    public init(_ anchorView: UIView?, _ items: [ASDropDownItem]?, _ containerSize: CGSize?) {
+    public init(_ anchorView: UIView?, _ items: [ASDropDownItem]?, _ prop: ASDropDownProp?, _ containerSize: CGSize?) {
         super.init(frame: CGRect.zero)
         self.anchorView = anchorView
         self.items = items
+        self.prop = prop
         self.containerSize = containerSize
         setup()
     }
@@ -31,7 +32,7 @@ public class ASDropDownViewDefault: ASDropDownView {
     public func setup() {
         setupUIElements()
         setupConstraints() 
-        bropBox?.addItems(items)
+        bropBox?.addItems(items, prop)
     }
     
     public func setupUIElements() {

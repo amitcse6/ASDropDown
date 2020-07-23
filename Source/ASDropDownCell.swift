@@ -20,6 +20,7 @@ class ASDropDownCell: UIView {
     internal var index = 0
     internal var padding: CGFloat = 8
     internal var item: ASDropDownItem?
+    internal var prop: ASDropDownProp?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,10 +32,11 @@ class ASDropDownCell: UIView {
         setup()
     }
     
-    public init(_ index: Int, _ item: ASDropDownItem) {
+    public init(_ index: Int, _ item: ASDropDownItem, _ prop: ASDropDownProp?) {
         super.init(frame: CGRect.zero)
         self.index = index
         self.item = item
+        self.prop = prop
         setup()
     }
     
@@ -52,8 +54,18 @@ class ASDropDownCell: UIView {
         self.container?.addSubview(self.myLabel.unsafelyUnwrapped)
         self.myLabel?.text = item?.title ?? ""
         self.myLabel?.backgroundColor = .clear
-        self.myLabel?.font = UIFont.systemFont(ofSize: 15)
-        self.myLabel?.textColor = UIColor(red: 100/255.0, green: 100/255.0, blue: 100/255.0, alpha: 1.0)
+        if let prop = prop, let font = prop.font {
+            self.myLabel?.font = font
+        }else {
+            self.myLabel?.font = UIFont.systemFont(ofSize: 15)
+        }
+        if let prop = prop, let textColor = prop.textColor {
+            self.myLabel?.textColor = textColor
+        }else {
+            self.myLabel?.textColor = UIColor(red: 100/255.0, green: 100/255.0, blue: 100/255.0, alpha: 1.0)
+        }
+        
+        
         
         let gesture = UITapGestureRecognizer(target: self, action: #selector(onTap))
         gesture.numberOfTapsRequired = 1

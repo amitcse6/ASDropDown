@@ -97,16 +97,16 @@ public class ASDropDownBox: UIView {
         heightConstraint?.isActive = true
     }
     
-    public func addItems(_ items: [ASDropDownItem]?) {
+    public func addItems(_ items: [ASDropDownItem]?, _ prop: ASDropDownProp?) {
         if let items = items {
             for (index, item) in items.enumerated() {
-                addItem(index, item)
+                addItem(index, item, prop)
             }
         }
     }
     
-    public func addItem(_ index: Int, _ item: ASDropDownItem) {
-        let cell = ASDropDownCell(index, item)
+    public func addItem(_ index: Int, _ item: ASDropDownItem, _ prop: ASDropDownProp?) {
+        let cell = ASDropDownCell(index, item, prop)
         myStackView?.addArrangedSubview(cell)
         cell.delegate = self
         cell.backgroundColor = .clear

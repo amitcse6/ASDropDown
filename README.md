@@ -5,9 +5,20 @@
 [![License](https://img.shields.io/cocoapods/l/ASDropDown.svg?style=flat)](https://cocoapods.org/pods/ASDropDown)
 [![Platform](https://img.shields.io/cocoapods/p/ASDropDown.svg?style=flat)](https://cocoapods.org/pods/ASDropDown)
 
+Screenshots
+---------
+![ASDropDown Screenshots](asdropdown_screenshot.gif)
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```swift
+import ASDropDown
+
+let items = (0..<100).map({return ASDropDownItem(key: "key_\($0)", title: "item-\($0)")})
+ASDropDown.openDropDown(items, ASDropDownProp(UIFont.systemFont(ofSize: 15), UIColor.red), { [unowned self] (index: Int, item: String) in
+    self.textField.text = item
+    }, button, nil)
+```
 
 ## Requirements
 

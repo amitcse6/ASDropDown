@@ -15,6 +15,7 @@ public typealias ASDropDownViewSelectionClosure = (ASDropDownViewItemIndex, Stri
 public class ASDropDownView: UIView {
     internal var anchorView: UIView?
     internal var items: [ASDropDownItem]?
+    internal var prop: ASDropDownProp?
     
     internal var container: UIView?
     internal var boxView: UIView?
