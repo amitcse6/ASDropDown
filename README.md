@@ -11,7 +11,7 @@ Screenshots
 
     
 ## Example
-    ```swift
+```swift
     
     import ASDropDown
 
@@ -21,7 +21,7 @@ Screenshots
         self.textField.text = item
      }, anchorpointView, nil)
         
-    ```
+```
 
 ## DropDown Customization Properties
 
