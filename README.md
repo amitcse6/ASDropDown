@@ -9,15 +9,31 @@ Screenshots
 ---------
 ![ASDropDown Screenshots](asdropdown_screenshot.gif)
 
+    
 ## Example
+    ```swift
+    
+    import ASDropDown
+
+    let items = (0..<100).map({return ASDropDownItem(key: "key_\($0)", title: "item-\($0)")})
+    
+    ASDropDown.openDropDown(items, nil, { (index: Int, item: String) in
+        self.textField.text = item
+     }, anchorpointView, nil)
+        
+    ```
+
+## DropDown Customization Properties
 
 ```swift
+
 import ASDropDown
 
 let items = (0..<100).map({return ASDropDownItem(key: "key_\($0)", title: "item-\($0)")})
 ASDropDown.openDropDown(items, ASDropDownProp(UIFont.systemFont(ofSize: 15), UIColor.red), { [unowned self] (index: Int, item: String) in
     self.textField.text = item
-    }, button, nil)
+    }, anchorpointView, nil)
+    
 ```
 
 ## Requirements
