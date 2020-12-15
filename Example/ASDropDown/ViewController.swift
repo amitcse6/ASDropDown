@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let items = (0..<100).map({return ASDropDownItem(key: "key_\($0)", title: "item-\($0)")})
         ASDropDown.openDropDown(items, ASDropDownProp(UIFont.systemFont(ofSize: 15), UIColor.red), { [unowned self] (index: Int, item: String) in
             self.textField.text = item
-            }, button, nil)
+            }, button, nil, CGPoint(x: 5, y: 20))
     }
 }
 

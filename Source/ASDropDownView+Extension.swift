@@ -26,14 +26,14 @@ extension ASDropDownView {
             let anchorViewCenterY: CGFloat = globalPoint.y + anchorViewSize.height/2
             
             if anchorViewCenterX > screenSize.width/2 {
-                let rightConstant = screenSize.width - (globalPoint.x + anchorViewSize.width)
+                let rightConstant = screenSize.width - (globalPoint.x + anchorViewSize.width) + boxPadding.x
                 boxView?.rightAnchor.constraint(equalTo: container.unsafelyUnwrapped.rightAnchor, constant: -rightConstant).isActive = true
                 
                 let leftAnchor = boxView?.leftAnchor.constraint(greaterThanOrEqualTo: container.unsafelyUnwrapped.leftAnchor)
                 leftAnchor?.priority = UILayoutPriority(rawValue: 1000)
                 leftAnchor?.isActive = true
             }else {
-                let leftConstant = (globalPoint.x + anchorViewSize.width)
+                let leftConstant = (globalPoint.x + anchorViewSize.width) + boxPadding.x
                 boxView?.leftAnchor.constraint(equalTo: container.unsafelyUnwrapped.leftAnchor, constant: leftConstant).isActive = true
                 
                 let rightAnchor = boxView?.rightAnchor.constraint(lessThanOrEqualTo: container.unsafelyUnwrapped.rightAnchor)
@@ -42,14 +42,14 @@ extension ASDropDownView {
             }
             
             if anchorViewCenterY > screenSize.height/2 {
-                let bottomConstant = screenSize.height - (globalPoint.y + anchorViewSize.height)
+                let bottomConstant = screenSize.height - (globalPoint.y + anchorViewSize.height) + boxPadding.y
                 boxView?.bottomAnchor.constraint(equalTo: container.unsafelyUnwrapped.bottomAnchor, constant: -bottomConstant).isActive = true
                 
                 let topAnchor = boxView?.topAnchor.constraint(greaterThanOrEqualTo: container.unsafelyUnwrapped.topAnchor)
                 topAnchor?.priority = UILayoutPriority(rawValue: 1000)
                 topAnchor?.isActive = true
             }else {
-                let topConstant = (globalPoint.y)
+                let topConstant = (globalPoint.y) + boxPadding.y
                 boxView?.topAnchor.constraint(equalTo: container.unsafelyUnwrapped.topAnchor, constant: topConstant).isActive = true
                 
                 let bottomAnchor = boxView?.bottomAnchor.constraint(lessThanOrEqualTo: container.unsafelyUnwrapped.bottomAnchor)

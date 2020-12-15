@@ -31,10 +31,10 @@ public class ASDropDown: NSObject {
     internal var withDuration: TimeInterval = 3
     internal var delay: TimeInterval = 1
     
-    private func openDropDown(_ items: [ASDropDownItem], _ prop: ASDropDownProp?, _ selectionAction: @escaping ASDropDownSelectionClosure, _ anchorView: UIView?, _ size: CGSize?) {
+    private func openDropDown(_ items: [ASDropDownItem], _ prop: ASDropDownProp?, _ selectionAction: @escaping ASDropDownSelectionClosure, _ anchorView: UIView?, _ size: CGSize?, _ padding: CGPoint?) {
         if #available(iOS 11.0, *) {
             if let viewController = ASDropDown.topMostVC {
-                dropDownView = ASDropDownViewDefault(anchorView, items, prop, size)
+                dropDownView = ASDropDownViewDefault(anchorView, items, prop, size, padding)
                 viewController.view.addSubview(dropDownView.unsafelyUnwrapped)
                 dropDownView?.setEvent(selectionAction)
                 dropDownView?.translatesAutoresizingMaskIntoConstraints = false
@@ -86,10 +86,10 @@ public class ASDropDown: NSObject {
 
 @available(iOS 9.0, *)
 extension ASDropDown {
-    public static func openDropDown(_ items: [ASDropDownItem], _ prop: ASDropDownProp?, _ selectionAction: @escaping ASDropDownSelectionClosure, _ anchorView: UIView?, _ size: CGSize?) {
+    public static func openDropDown(_ items: [ASDropDownItem], _ prop: ASDropDownProp?, _ selectionAction: @escaping ASDropDownSelectionClosure, _ anchorView: UIView?, _ size: CGSize?, _ padding: CGPoint?) {
         ASDropDown.dismiss()
         if let dropDown = ASDropDown.shared() {
-            dropDown.openDropDown(items, prop, selectionAction, anchorView, size)
+            dropDown.openDropDown(items, prop, selectionAction, anchorView, size, padding)
         }
     }
     

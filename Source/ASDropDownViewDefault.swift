@@ -20,12 +20,13 @@ public class ASDropDownViewDefault: ASDropDownView {
         setup()
     }
     
-    public init(_ anchorView: UIView?, _ items: [ASDropDownItem]?, _ prop: ASDropDownProp?, _ containerSize: CGSize?) {
+    public init(_ anchorView: UIView?, _ items: [ASDropDownItem]?, _ prop: ASDropDownProp?, _ containerSize: CGSize?, _ padding: CGPoint?) {
         super.init(frame: CGRect.zero)
         self.anchorView = anchorView
         self.items = items
         self.prop = prop
         self.containerSize = containerSize
+        self.boxPadding = padding ?? CGPoint.zero 
         setup()
     }
     
